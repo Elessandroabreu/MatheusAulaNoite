@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html Sem Estilizacao</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required/>
-    <select name="estado" required>
+     <label>Nome</label>
+    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required/> 
+    
+        <select name="estado" required>
         <option value="">Selecione seu estado</option>
         <option value="SP"> São Paulo</option>
         <option value="AL"> Alagoas</option>
         <option value="SC"> Santa Catarina</option>
-       <button type="submit">Enviar</button>
+       
        </select>
 
-       <textarea name="mensagem" rows="4" placeholder="escreva sua mesnagem"></textarea>
+       <textarea name="mensagem" rows="4" placeholder="escreva sua mensagem aqui"></textarea>
 
   <input type="email" name="email" required />
   <form >
     <label>Nome</label>
-    <input type="text" name="nome" required placeholder="Digite seu nome" />
+    <input type="text" name="nome" required placeholder="Digite seu nome"/> <br>
 
     <label>Email</label>
-    <input type="email" name="email" required placeholder="exemplo@gamil.com" />
+    <input type="email" name="email" required placeholder="exemplo@gamil.com" /><br>
+
+    <label for="cep">CEP</label>
+    <input type="text" 
+    name="cep" 
+    pattern="\d{5}-?\d{3}"
+    title="Digite seu CEP valido"
+    placeholder="Digite seu CEP" required />
+    <br>
+    
+    <label>Estado</label>
+    <select name="estado" required>
+    <option value="">Escolha</option>
+    <option value="AC">Acre</option>
+    <option value="RS">Rio Grande do Sul</option>
+    </select>
+
+    <label>Mensagem</label>
+    <textarea name="mensagem" rows="4" placeholder="Digite seu texto"></textarea>
+    <br><br>
+    <button type="button">Enviar</button>
   </form>
 
 </body>
